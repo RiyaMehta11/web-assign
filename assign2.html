@@ -1,0 +1,245 @@
+<HTML>
+<head>
+<TITLE>
+assignment-1
+</TITLE>
+<style type="text/css">    
+        body{    
+            font-family: Calibri;    
+        }    
+        input[type="text"] {    
+            width: 250px;    
+        }    
+        input[type="submit"], input[type="reset"] {    
+            width: 77px;    
+            height: 27px;    
+            position: relative;left: 180px;    
+        }    
+        form{    
+            text-align: center;    
+            font-family: Calibri;    
+            font-size: 20px;    
+            border: 3px solid black;    
+            width: 600px;    
+            margin: 20px auto;    
+        }    
+        td {    
+            padding: 10px;    
+        }    
+        td:first-child {    
+            text-align: right;    
+            font-weight: bold;    
+        }    
+        td:last-child {    
+            text-align: left;    
+    
+    </style> 
+    <link rel ="stylesheet" href ="style.css">   
+    <script>    
+        function validate() {    
+            var fname = document.reg_form.fname;    
+            var lname = document.reg_form.lname;    
+            var address = document.reg_form.address;    
+            var gender = document.reg_form.gender;    
+            var email = document.reg_form.email;    
+            var mobile = document.reg_form.mobile;    
+            var course = document.reg_form.course;    
+    
+            if (fname.value.length <= 0) {    
+                alert("Name is required");    
+                fname.focus();    
+                return false;    
+            }    
+            if (lname.value.length <= 0) {    
+                alert("Last Name is required");    
+                lname.focus();    
+                return false;    
+            }    
+            if (address.value.length <= 0) {    
+                alert("Address is required");    
+                address.focus();    
+                return false;    
+            }    
+            if (gender.value.length <= 0) {    
+                alert("Gender is required");    
+                gender.focus();    
+                return false;    
+            }    
+            if (email.value.length <= 0) {    
+                alert("Email Id is required");    
+                email.focus();    
+                return false;    
+            }    
+            if (mobile.value.length <= 0) {    
+                alert("Mobile number is required");    
+                mobile.focus();    
+                return false;    
+            }    
+            if (course.value == "select course") {    
+                alert("Course is required");    
+                course.focus();    
+                return false;    
+            }    
+            return false;    
+        }    
+    </script> 
+
+        
+</head>
+ 
+<body onload="loadInfo()">
+<script>
+setInterval(
+function () {
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#"+randomColor;
+},2000);
+</script>
+<h2 style="text-align: center">FIFA</h2>
+<dl> <dt><strong>
+   <span style=" border-width:4px;border-style:solid;
+   border-color:yellow">  FIFA  </span></strong>:</dt><dd>
+ <script type = "text/javascript">  
+            function fun() {  
+  
+  
+               alert ("This is an alert dialog box");  
+            }
+</script>
+
+<script>
+function loadInfo(){
+   alert("Be Happy");}      
+  
+   </script>
+
+<br>The the Fifa World cup,often simply called
+the World cup, is an <i>international association football</i>.
+competition contested by senior men's national teams of
+ federation <b> Internationale de football AssociationThe globe
+govering body </b> 
+<p style="background-color:orange">The 22nd FIFA World Cup is taking place in Qatar from 20 November to 18 December 2022; it is the first World Cup to be held in 
+the Arab world and Muslim world, and the second held entirely in Asia after the 2002 tournament in South Korea and Japan.</p>
+
+ France are the defending champions, having defeated Croatia 4–2 in the 2018 final.<p style="background-color:red"> At an estimated cost of over $220 billion,
+ it is the most expensive World Cup ever held;</style> this figure is disputed by Qatari officials, including organising CEO Nasser Al Khater,
+ who said the true cost is $8 billion,</p>
+ <h4>FIFA holds an annual awards ceremony, The Best FIFA Football Awards since 2016, which recognizes 
+both individual and team achievements in international association football. Individually, the top men's player is awarded The Best FIFA Men's Player
+ and the top women's player is The Best FIFA Women's Player. Other main awards are The Best FIFA Football Coach and FIFA FIFPro World11.</h4>
+
+In 2000, FIFA presented two awards, FIFA Club of the Century and FIFA Player of the Century, to decide the greatest football club and player
+ of the 20th century. Real Madrid was the club winner, while Diego Maradona and Pelé were the joint player's winners.
+ and other figures relate to overall infrastructure development since the World Cup was awarded to Qatar in 2010.
+
+<ul style="type:square"><li ><font color="orange" >Qatar is hosting the fifa 22 </font>
+ <span style="color:mediumseagreen">Brazil</span>
+ <font color ="violet">Belgium </font> <font color ="red">Argentina</font>are top three in World ranking</p>
+ </dd>Click the following button to see the effect </p>        
+      <form>  
+         <input type = "button" value = "Click me" onclick = "fun();" />  
+       </form>
+   <form method="POST" action="">  
+       <input type="submit"/>  
+     </form> 
+       
+    </body> 
+    <hr>    
+    
+
+    
+<html>    
+ 
+<body>    
+      
+      
+     <form method="" action="" name="reg_form" onsubmit="return validate()">    
+        <h2>Registration Form</h2>    
+        <table>    
+            <tr>    
+                <td><label>First Name: </label></td>    
+                <td>    
+                    <input type="text" name="fname" placeholder="First Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Last Name: </label></td>    
+                <td>    
+                    <input type="text" name="lname" placeholder="Last Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Address: </label></td>    
+                <td>    
+                    <input type="textarea" size="50" name="address" placeholder="Address">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Gender: </label></td>    
+                <td>    
+                    <input type="radio" name="gender" value="male">Male    
+                    <input type="radio" name="gender" value="femele">Female    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Email Id: </label></td>    
+                <td>    
+                    <input type="text" name="email" placeholder="example@gmail.com">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Mobile: </label></td>    
+                <td>    
+                    <input type="number" name="mobile">    
+                </td>    
+            </tr> 
+             <tr>    
+                <td><label> Movie </label></td>    
+                <td>    
+                    <input type="text" name="lname" placeholder="Movie">    
+                </td>    
+            </tr>
+              <tr>    
+            <td><label>Singer </label></td>    
+                <td>    
+                    <input type="text" name="lname" placeholder="Singer">    
+                </td>    
+            </tr>    
+            </tr>       
+            <tr>    
+            <td><label>favorite subject: </label></td>    
+                <td>    
+                    <select name="favorite subject">    
+                        <option value="select favorite subject">favorite subject</option>    
+                        <option value="HTML">HTML</option>    
+                        <option value="CSS">CSS</option>    
+                        <option value="JavaScript">JAVASCRIPT</option>    
+                        <option value="Java">JAVA</option>    
+                    </select>    
+                </td>    
+            </tr>    
+            <tr>    
+                <td>    
+                    <input type="submit" name="submit" value="Submit">    
+                    <input type="reset" name="reset" value="Reset">    
+                </td>  
+  
+            </tr>
+
+      
+        </table>
+    
+    </form>
+
+   
+</body>
+    
+</html>
+     
+
+
+ 
+
+
+ 
+ <br>
